@@ -1,0 +1,32 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:gv="nativescript-grid-view" loaded="pageLoaded">
+  
+  <GridLayout>
+    
+    <gv:GridView 
+      id="gridview"
+      items="{{ items }}" 
+      colWidth="{{ itemWidth }}" 
+      rowHeight="{{ itemWidth }}" 
+      scroll="updateScrollBar"
+    >
+      <gv:GridView.itemTemplate>
+        <GridLayout backgroundColor="#33ffff" style="margin: 5">
+          <Label text="{{ value }}" verticalAlignment="center"/>
+        </GridLayout>
+      </gv:GridView.itemTemplate>
+    </gv:GridView>
+
+    <Label
+      width="5"
+      height="{{ scrollBarHeight }} "
+      marginRight="2"
+      marginTop="{{ scrollBarMarginTop }}"
+      backgroundColor="rgb(80,80,80)"
+      horizontalAlignment="right"
+      verticalAlignment="top"
+    />
+
+  </GridLayout>
+
+
+</Page>
