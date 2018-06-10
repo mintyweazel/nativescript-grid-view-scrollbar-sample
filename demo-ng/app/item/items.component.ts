@@ -43,7 +43,7 @@ import * as utils from "utils/utils";
             <Label
               #scrollbar
               width="5"
-              height="100"
+              height="0"
               marginRight="2"
               backgroundColor="rgb(80,80,80)"
               horizontalAlignment="right"
