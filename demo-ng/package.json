@@ -10,7 +10,7 @@
     }
   },
   "scripts": {
-    "demo.android": "npm i && tns run android --syncAllFiles"
+    "demo.android": "npm i && tns run android --syncAllFiles",
     "demo.ng.android": "npm i && tns run android --bundle --env.aot --env.uglify --syncAllFiles"
   },
   "dependencies": {
